@@ -141,6 +141,9 @@
   <ItemGroup>
     <ClCompile Include="Search_DZZZ.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Particpants.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
