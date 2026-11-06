@@ -20,7 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Particpants.h">
+    <ClInclude Include="Participants.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="DataSetRegister.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

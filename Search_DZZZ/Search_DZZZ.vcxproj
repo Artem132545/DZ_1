@@ -142,7 +142,8 @@
     <ClCompile Include="Search_DZZZ.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Particpants.h" />
+    <ClInclude Include="DataSetRegister.h" />
+    <ClInclude Include="Participants.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
