@@ -2,6 +2,8 @@
 
 #include <vector>
 
+using Participant = std::vector<int>(*)(int, int);
+
 std::vector<int> findPrimesTrialDivision(int left, int right);
 std::vector<int> findPrimesEratosthenes(int left, int right);
 std::vector<int> findPrimesSegmented(int left, int right);
