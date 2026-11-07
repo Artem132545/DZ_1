@@ -2,28 +2,20 @@
 
 #include <stack>
 #include <string>
+#include <vector>
 
 struct DataSet
 {
     std::string description;
     int left;
     int right;
+    std::vector<int> expected;
 };
 
-inline std::stack<DataSet> GenerateDataSets()
-{
-    std::stack<DataSet> tests;
-
-    tests.push({ "Large range", 1, 100000 });
-    tests.push({ "Range 10000", 1, 10000 });
-    tests.push({ "Range 1000", 1, 1000 });
-    tests.push({ "Range 100", 1, 100 });
-    tests.push({ "Invalid range", 20, 10 });
-    tests.push({ "No primes", 14, 16 });
-    tests.push({ "Negative range", -5, 10 });
-    tests.push({ "Small range", 10, 20 });
-    tests.push({ "Single prime", 2, 2 });
-    tests.push({ "Zero and one", 0, 1 });
-
-    return tests;
-}
+std::stack<DataSet> GenerateDataSets();
+//void AddTestsByShafikov(std::stack<DataSet>& tests);
+//void AddTestsByKryukova(std::stack<DataSet>& tests);
+//void AddTestsByDavaasuren(std::stack<DataSet>& tests);
+//void AddTestsByDrach(std::stack<DataSet>& tests);             объявления тестов
+//void AddTestsByMilovanov(std::stack<DataSet>& tests);
+//void AddTestsByKorolev(std::stack<DataSet>& tests);
