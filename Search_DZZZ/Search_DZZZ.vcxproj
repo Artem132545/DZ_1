@@ -139,6 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DataSetRegistercpp.cpp" />
     <ClCompile Include="Search_DZZZ.cpp" />
   </ItemGroup>
   <ItemGroup>
