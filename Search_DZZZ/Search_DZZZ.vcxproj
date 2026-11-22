@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{62c3d92c-9711-435e-b132-1babdf9a8c5a}</ProjectGuid>
+    <ProjectGuid>{D7BA2FE2-5EE1-4A01-59F5-7750725970E3}</ProjectGuid>
     <RootNamespace>SearchDZZZ</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -140,7 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DataSetRegistercpp.cpp" />
+    <ClCompile Include="eratosthenes_by_Kryukova.cpp" />
+    <ClCompile Include="miller_rabin_by_Korolev.cpp" />
     <ClCompile Include="Search_DZZZ.cpp" />
+    <ClCompile Include="sundaram_by_Drach.cpp" />
+    <ClCompile Include="tests_by_Drach.cpp" />
+    <ClCompile Include="tests_by_Korolev.cpp" />
+    <ClCompile Include="tests_by_Kryukova.cpp" />
+    <ClCompile Include="tests_by_Shafikov.cpp" />
+    <ClCompile Include="trial_by_Shafikov.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataSetRegister.h" />

@@ -13,9 +13,9 @@ struct DataSet
 };
 
 std::stack<DataSet> GenerateDataSets();
-//void AddTestsByShafikov(std::stack<DataSet>& tests);
-//void AddTestsByKryukova(std::stack<DataSet>& tests);
+void AddTestsByShafikov(std::stack<DataSet>& tests);
+void AddTestsByKryukova(std::stack<DataSet>& tests);
 //void AddTestsByDavaasuren(std::stack<DataSet>& tests);
-//void AddTestsByDrach(std::stack<DataSet>& tests);             объявления тестов
+void AddTestsByDrach(std::stack<DataSet>& tests);             
 //void AddTestsByMilovanov(std::stack<DataSet>& tests);
-//void AddTestsByKorolev(std::stack<DataSet>& tests);
+void AddTestsByKorolev(std::stack<DataSet>& tests);

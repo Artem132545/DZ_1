@@ -1,1 +1,85 @@
-dataset	left	right	teammate	method	count	time_us
+dataset	left	right	teammate	method	count	time_ns	status
+"Korolev_3"	25325966	25326029	Shafikov	findPrimesTrialDivision	3	31100	PASS
+"Korolev_3"	25325966	25326029	Kryukova	findPrimesEratosthenes	3	22924600	PASS
+"Korolev_3"	25325966	25326029	Drach	findPrimesSundaram	3	44329200	PASS
+"Korolev_3"	25325966	25326029	Korolev	findPrimesMillerRabin	3	6200	PASS
+"Korolev_2"	25325200	25325263	Shafikov	findPrimesTrialDivision	3	20700	PASS
+"Korolev_2"	25325200	25325263	Kryukova	findPrimesEratosthenes	3	21771800	PASS
+"Korolev_2"	25325200	25325263	Drach	findPrimesSundaram	3	41240900	PASS
+"Korolev_2"	25325200	25325263	Korolev	findPrimesMillerRabin	3	5900	PASS
+"Korolev_1"	25325864	25325927	Shafikov	findPrimesTrialDivision	0	3300	PASS
+"Korolev_1"	25325864	25325927	Kryukova	findPrimesEratosthenes	0	22447000	PASS
+"Korolev_1"	25325864	25325927	Drach	findPrimesSundaram	0	40938900	PASS
+"Korolev_1"	25325864	25325927	Korolev	findPrimesMillerRabin	0	4000	PASS
+"Drach_3"	10000000	10000100	Shafikov	findPrimesTrialDivision	2	15400	PASS
+"Drach_3"	10000000	10000100	Kryukova	findPrimesEratosthenes	2	7624200	PASS
+"Drach_3"	10000000	10000100	Drach	findPrimesSundaram	2	16075400	PASS
+"Drach_3"	10000000	10000100	Korolev	findPrimesMillerRabin	2	7700	PASS
+"Drach_2"	1000	1100	Shafikov	findPrimesTrialDivision	16	22200	PASS
+"Drach_2"	1000	1100	Kryukova	findPrimesEratosthenes	16	2100	PASS
+"Drach_2"	1000	1100	Drach	findPrimesSundaram	16	2600	PASS
+"Drach_2"	1000	1100	Korolev	findPrimesMillerRabin	16	6900	PASS
+"Drach_1"	2	500	Shafikov	findPrimesTrialDivision	95	7900	PASS
+"Drach_1"	2	500	Kryukova	findPrimesEratosthenes	95	4200	PASS
+"Drach_1"	2	500	Drach	findPrimesSundaram	95	4300	PASS
+"Drach_1"	2	500	Korolev	findPrimesMillerRabin	95	28900	PASS
+"Kryukova_unfavorable"	1000000	1000040	Shafikov	findPrimesTrialDivision	4	7600	PASS
+"Kryukova_unfavorable"	1000000	1000040	Kryukova	findPrimesEratosthenes	4	791100	PASS
+"Kryukova_unfavorable"	1000000	1000040	Drach	findPrimesSundaram	4	1326400	PASS
+"Kryukova_unfavorable"	1000000	1000040	Korolev	findPrimesMillerRabin	4	4300	PASS
+"Kryukova_typical"	210	251	Shafikov	findPrimesTrialDivision	8	1100	PASS
+"Kryukova_typical"	210	251	Kryukova	findPrimesEratosthenes	8	1000	PASS
+"Kryukova_typical"	210	251	Drach	findPrimesSundaram	8	1000	PASS
+"Kryukova_typical"	210	251	Korolev	findPrimesMillerRabin	8	3000	PASS
+"Kryukova_favorable"	-5	127	Shafikov	findPrimesTrialDivision	31	2500	PASS
+"Kryukova_favorable"	-5	127	Kryukova	findPrimesEratosthenes	31	2200	PASS
+"Kryukova_favorable"	-5	127	Drach	findPrimesSundaram	31	1900	PASS
+"Kryukova_favorable"	-5	127	Korolev	findPrimesMillerRabin	31	7300	PASS
+"Shafikov_3"	2147483600	2147483647	Shafikov	findPrimesTrialDivision	2	174200	PASS
+"Shafikov_3"	2147483600	2147483647	Kryukova	findPrimesEratosthenes	2	9931000600	PASS
+"Shafikov_3"	2147483600	2147483647	Drach	findPrimesSundaram	2	33223120200	PASS
+"Shafikov_3"	2147483600	2147483647	Korolev	findPrimesMillerRabin	2	6800	PASS
+"Shafikov_2"	100	200	Shafikov	findPrimesTrialDivision	21	2700	PASS
+"Shafikov_2"	100	200	Kryukova	findPrimesEratosthenes	21	1500	PASS
+"Shafikov_2"	100	200	Drach	findPrimesSundaram	21	2300	PASS
+"Shafikov_2"	100	200	Korolev	findPrimesMillerRabin	21	7300	PASS
+"Shafikov_1"	1	30	Shafikov	findPrimesTrialDivision	10	1000	PASS
+"Shafikov_1"	1	30	Kryukova	findPrimesEratosthenes	10	1000	PASS
+"Shafikov_1"	1	30	Drach	findPrimesSundaram	10	1100	PASS
+"Shafikov_1"	1	30	Korolev	findPrimesMillerRabin	10	1900	PASS
+"Zero and one"	0	1	Shafikov	findPrimesTrialDivision	0	0	PASS
+"Zero and one"	0	1	Kryukova	findPrimesEratosthenes	0	0	PASS
+"Zero and one"	0	1	Drach	findPrimesSundaram	0	100	PASS
+"Zero and one"	0	1	Korolev	findPrimesMillerRabin	0	0	PASS
+"Composite"	4	4	Shafikov	findPrimesTrialDivision	0	0	PASS
+"Composite"	4	4	Kryukova	findPrimesEratosthenes	0	400	PASS
+"Composite"	4	4	Drach	findPrimesSundaram	0	300	PASS
+"Composite"	4	4	Korolev	findPrimesMillerRabin	0	100	PASS
+"Single prime"	2	2	Shafikov	findPrimesTrialDivision	1	300	PASS
+"Single prime"	2	2	Kryukova	findPrimesEratosthenes	1	700	PASS
+"Single prime"	2	2	Drach	findPrimesSundaram	1	600	PASS
+"Single prime"	2	2	Korolev	findPrimesMillerRabin	1	200	PASS
+"Small range"	10	20	Shafikov	findPrimesTrialDivision	4	500	PASS
+"Small range"	10	20	Kryukova	findPrimesEratosthenes	4	600	PASS
+"Small range"	10	20	Drach	findPrimesSundaram	4	1900	PASS
+"Small range"	10	20	Korolev	findPrimesMillerRabin	4	1000	PASS
+"Negative range"	-5	10	Shafikov	findPrimesTrialDivision	4	500	PASS
+"Negative range"	-5	10	Kryukova	findPrimesEratosthenes	4	900	PASS
+"Negative range"	-5	10	Drach	findPrimesSundaram	4	900	PASS
+"Negative range"	-5	10	Korolev	findPrimesMillerRabin	4	900	PASS
+"No primes"	14	16	Shafikov	findPrimesTrialDivision	0	100	PASS
+"No primes"	14	16	Kryukova	findPrimesEratosthenes	0	300	PASS
+"No primes"	14	16	Drach	findPrimesSundaram	0	600	PASS
+"No primes"	14	16	Korolev	findPrimesMillerRabin	0	100	PASS
+"Invalid range"	20	10	Shafikov	findPrimesTrialDivision	0	0	PASS
+"Invalid range"	20	10	Kryukova	findPrimesEratosthenes	0	200	PASS
+"Invalid range"	20	10	Drach	findPrimesSundaram	0	100	PASS
+"Invalid range"	20	10	Korolev	findPrimesMillerRabin	0	100	PASS
+"Range 50"	1	50	Shafikov	findPrimesTrialDivision	15	1700	PASS
+"Range 50"	1	50	Kryukova	findPrimesEratosthenes	15	1300	PASS
+"Range 50"	1	50	Drach	findPrimesSundaram	15	1900	PASS
+"Range 50"	1	50	Korolev	findPrimesMillerRabin	15	2800	PASS
+"Range 100"	1	100	Shafikov	findPrimesTrialDivision	25	2300	PASS
+"Range 100"	1	100	Kryukova	findPrimesEratosthenes	25	1500	PASS
+"Range 100"	1	100	Drach	findPrimesSundaram	25	1500	PASS
+"Range 100"	1	100	Korolev	findPrimesMillerRabin	25	5000	PASS

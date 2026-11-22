@@ -5,6 +5,7 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
+#include <iomanip>
 
 #include "DataSetRegister.h"
 #include "Participants.h"
@@ -15,6 +16,9 @@ static string teammate = "";
 static string dataset = "";
 static vector<string> logs;
 
+static int testsTotal = 0;
+static int testsPassed = 0;
+
 void Run(string method_name, Participant p, const DataSet& data)
 {
     auto start = chrono::steady_clock::now();
@@ -23,7 +27,14 @@ void Run(string method_name, Participant p, const DataSet& data)
 
     auto stop = chrono::steady_clock::now();
 
-    auto time = chrono::duration_cast<chrono::microseconds>(stop - start).count();
+    auto time = chrono::duration_cast<chrono::nanoseconds>(stop - start).count();
+
+    bool passed = (res == data.expected);
+
+    testsTotal++;
+
+    if (passed)
+        testsPassed++;
 
     ostringstream oss;
 
@@ -33,21 +44,43 @@ void Run(string method_name, Participant p, const DataSet& data)
         << teammate << '\t'
         << method_name << '\t'
         << res.size() << '\t'
-        << ((res == data.expected) ? to_string(time) : "-1");
+        << time << '\t'
+        << (passed ? "PASS" : "FAIL");
 
     logs.push_back(oss.str());
-   
-    cout << oss.str() << '\n';
+
+    cout << std::left
+        << setw(25) << dataset
+        << setw(13) << data.left
+        << setw(13) << data.right
+        << setw(14) << teammate
+        << setw(30) << method_name
+        << setw(8) << res.size()
+        << setw(14) << time
+        << (res == data.expected ? "PASS" : "FAIL")
+        << '\n';
 }
 
 #define RUN(x) Run(#x, x, data)
 
 int main()
 {
-    string header = "dataset\tleft\tright\tteammate\tmethod\tcount\ttime_us";
+    string header = "dataset\tleft\tright\tteammate\tmethod\tcount\ttime_ns\tstatus";
 
-    cout << header << '\n';
     logs.push_back(header);
+
+    cout << std::left
+        << setw(25) << "Dataset"
+        << setw(13) << "Left"
+        << setw(13) << "Right"
+        << setw(14) << "Teammate"
+        << setw(30) << "Method"
+        << setw(8) << "Count"
+        << setw(14) << "Time(ns)"
+        << "Status"
+        << '\n';
+
+    cout << string(107, '-') << '\n';
 
     auto dataSets = GenerateDataSets();
 
@@ -59,24 +92,23 @@ int main()
 
         dataset = data.description;
 
-
         teammate = "Shafikov";
-        // RUN(findPrimesTrialDivision);
+        RUN(findPrimesTrialDivision);
 
         teammate = "Kryukova";
-        // RUN(findPrimesEratosthenes);
+        RUN(findPrimesEratosthenes);
 
         teammate = "Davaasuren";
         // RUN(findPrimesSegmented);
 
         teammate = "Drach";
-        // RUN(findPrimesSundaram);
+        RUN(findPrimesSundaram);
 
         teammate = "Milovanov";
         // RUN(findPrimesAtkinBernstein);
 
         teammate = "Korolev";
-        // RUN(findPrimesMillerRabin);
+        RUN(findPrimesMillerRabin);
 
         ++count;
 
@@ -94,8 +126,12 @@ int main()
     for (const string& line : logs)
         fout << line << '\n';
 
+    cout << string(107, '-') << '\n';
+
     cout << "Prepared datasets: " << count << '\n';
-    cout << "Algorithms are not connected yet.\n";
+    cout << "Total tests: " << testsTotal << '\n';
+    cout << "Passed: " << testsPassed << '\n';
+    cout << "Failed: " << testsTotal - testsPassed << '\n';
 
     return 0;
 }

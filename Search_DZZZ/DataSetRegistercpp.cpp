@@ -22,12 +22,12 @@ std::stack<DataSet> GenerateDataSets()
     tests.push({ "Composite", 4, 4, {} });
     tests.push({ "Zero and one", 0, 1, {} });
 
-    //AddTestsByShafikov(tests);
-    //AddTestsByKryukova(tests);
+    AddTestsByShafikov(tests);
+    AddTestsByKryukova(tests);
     //AddTestsByDavaasuren(tests);          после того как участники сделают свои тесты в отдельном cpp
-    //AddTestsByDrach(tests);
+    AddTestsByDrach(tests);
     //AddTestsByMilovanov(tests);
-    //AddTestsByKorolev(tests);
+    AddTestsByKorolev(tests);
 
     return tests;
 }
